@@ -1,6 +1,12 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, get_object_or_404
+from .models import Visit
 # Create your views here.
 
 def index(request):
-    return HttpResponse("Hello, world!")
+    visitor = Visit.objects.all()
+    context = { "visitor": visitor }
+    return render(
+            request, 
+            "visitCounter/index.html",
+            context
+            )

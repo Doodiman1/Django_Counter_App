@@ -1,0 +1,15 @@
+<h1>
+    Times Visited:
+</h1>
+
+
+{% for visit in visitor %}
+
+    <ul> 
+        <li> {{visit.count}} </li> 
+        <li> {{visit.username}} </li> 
+    </ul>
+
+{% endfor %}
+
+
