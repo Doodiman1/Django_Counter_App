@@ -5,10 +5,18 @@
 
 {% for visit in visitor %}
 
-    <ul> 
-        <li> {{visit.count}} </li> 
-        <li> {{visit.username}} </li> 
-    </ul>
+    <table>
+        <tr>
+            <th id="count"> Count </th>
+            <th> User </th>
+        </tr>
+        <tr>
+            <td> {{visit.count}} </td> 
+            <td> {{visit.username}} </td> 
+        </tr>
+        <td><strong> Total </strong> </td>
+        <td> {{visit.count}} </td>
+    </table>
 
 {% endfor %}
 
