@@ -1,3 +1,7 @@
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'visitCounter/style.css' %}">
+
 <h3>
     Times Visited:
 </h3>
@@ -5,7 +9,7 @@
 
 {% for visit in visitor %}
 
-    <table>
+    <table class="myTable">
         <tr>
             <th id="count"> Count </th>
             <th> User </th>
@@ -14,6 +18,8 @@
             <td> {{visit.count}} </td> 
             <td> {{visit.username}} </td> 
         </tr>
+    </table>
+    <table>
         <td><strong> Total </strong> </td>
         <td> {{visit.count}} </td>
     </table>
