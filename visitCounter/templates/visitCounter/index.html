@@ -6,6 +6,7 @@
     Times Visited:
 </h3>
 
+<a href="{{ 'create_user' }}">create user</a>
 
 {% for visit in visitor %}
 
@@ -20,7 +21,7 @@
         </tr>
     </table>
     <table>
-        <td><strong> Total </strong> </td>
+        <td><strong> Total </strong></td>
         <td> {{visit.count}} </td>
     </table>
 
