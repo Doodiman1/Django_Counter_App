@@ -1,0 +1,11 @@
+
+<h1>Create User</h1>
+
+<form method="POST">
+    { % csrf_token % }
+    <input>Email</input> </br>
+    <input>Username</input> </br>
+    <input>Password</input> </br>
+    <button type="submit">Submit</button> 
+</form>
+
